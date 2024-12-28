@@ -75,7 +75,16 @@ export default function Index() {
       />
 
       {loading && (
-        <div className="mt-8 text-muted-foreground">Searching...</div>
+        <div className="flex-1 flex items-center justify-center -mt-20">
+          <div className="cube">
+            <div className="side"></div>
+            <div className="side"></div>
+            <div className="side"></div>
+            <div className="side"></div>
+            <div className="side"></div>
+            <div className="side"></div>
+          </div>
+        </div>
       )}
 
       {result && !loading && <SearchResult content={result} />}
